@@ -19,7 +19,12 @@ class User:
         '''
         User.user_list.remove(self)
 
-        
+    @classmethod
+    def display_users(cls):
+        '''
+        method that display all user saved in the list
+        '''
+        return cls.user_list
 
     def __init__(self,first_name,username,password,email):
 
