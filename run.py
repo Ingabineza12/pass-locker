@@ -1,3 +1,5 @@
+#!/usr/bin/env python3.6
+
 from user import User
 from user import Credential
 
@@ -82,11 +84,11 @@ def check_existing_user(first_name):
 
 def main():
     print(' ')
-    print('Welcome to the password Locker application')
+    print('welcome to the password Locker application')
     while True:
         print(' ')
-        print("*"*50)
-        print("use these symbols to navigate: \n ca - Create account \n li - Login \n du - Delete User \n dd - Dispaly all users \n ex - Exit")
+        print("*"*30)
+        print("use these codes to navigate: \n ca - Create account \n li - Login \n du - Delete User \n dd - Dispaly all users \n ex - Exit")
 
         short_code = input('Please Enter your choice:').lower().strip()
         if short_code == 'ex':
