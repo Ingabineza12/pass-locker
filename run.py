@@ -162,17 +162,7 @@ def main():
                         print("Delete a Credential----")
                         print("Credential successfully deleted!!!!!!")
                         break
-                        # search_email=input('Please Enter the first_name')
-                        # if check_existing_user(search_email):
-                        #     search_user=find_user(search_email)
-                        #     print(f"{search_user.first_name} {search_user.username}")
-                        #     print("-"*20)
-                        #     print(f"Email.......{search_user.email}")
-                        #     print(f"FirstName...{search_user.first_name}")
-                        #     search_user.delete_credential()
-
-                        # else:
-                        #     print("The user doesn't Exit")
+                        
                     elif short_code =='cc':
                         print(' ')
                         print('Enter your credential: ')
