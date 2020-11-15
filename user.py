@@ -57,11 +57,12 @@ class User:
                 return user
 
 
-    def __init__(self,first_name,username,password,email):
+    def __init__(self,first_name,username,password,emai):
 
         self.first_name=first_name
         self.username=username
         self.password=password
+        self.email=email
 
 
 
