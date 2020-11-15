@@ -71,11 +71,7 @@ def generate_password():
     generate=Credential.generate_password()
     return generate
 
-def copy_credential(site_name):
-    '''
-    function to copy credentials
-    '''
-    return Credential.copy_credential(site_name)
+
 def check_existing_user(first_name):
         '''
         to check if the user exist
@@ -149,7 +145,7 @@ def main():
                 print('')
                 while True:
                     print("*"*30)
-                    print('Navigation code: \n cc-Create a Credential \n dc-Display Credentials \n du - Delete Credential \n cp-Copy Password \n ex-Exit')
+                    print('Navigation code: \n cc-Create a Credential \n dc-Display Credentials \n du - Delete Credential \n ex-Exit')
                     short_code=input('Please Enter your choice: ').lower().strip()
                     print("*"*30)
                     if short_code == 'ex':
@@ -162,7 +158,7 @@ def main():
                         print("Delete a Credential----")
                         print("Credential successfully deleted!!!!!!")
                         break
-                        
+
                     elif short_code =='cc':
                         print(' ')
                         print('Enter your credential: ')
@@ -205,11 +201,7 @@ def main():
                                 print(' ')
                                 print(" you don't have any credential ")
                                 print('')
-                    elif short_code == 'cp':
-                        print(' ')
-                        chosen_site= input('Enter the site name to copy : ')
-                        copy_credential(chosen_site)
-                        print(' ')
+
                     else:
                         print('Wrong option!! Try again.')
 

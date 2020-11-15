@@ -124,15 +124,7 @@ class TestCredentials(unittest.TestCase):
         twitter.save_credential()
         self.assertEqual(len(Credential.credential_list),2)
 
-    # def test_delete_credentials(self):
-    #     '''
-    #     method which test deletion of credential
-    #     '''
-    #
-    #     self.new_credential.delete_credential()
-    #     twitter=Credential("Deborah","Twitter","Debby07","Ingabineza")
-    #     twitter.save_credential()
-    #     self.assertEqual(len(Credential.credential_list),2)
+
 
 
     def tearDown(self):
@@ -165,22 +157,6 @@ class TestCredentials(unittest.TestCase):
         credential_exists=Credential.find_site('Twitter')
         self.assertEqual(credential_exists,twitter)
 
-    def test_copy(self):
-        '''
-        Methode to copy the credential and save them
-        '''
-
-        self.new_credential.save_credential()
-        twitter =Credential("Deborah","Twitter","Debby07","Ingabineza")
-        twitter.save_credential()
-        find_credential=None
-        for credential in Credential.user_credential_list:
-
-            find_credential=Credential.find_site(credential.site_name)
-            return pyperclip.copy(find_credential.password)
-
-            Credential.copy_credential(self.new_credential.site_name)
-            self.assertEqual('Debby07',pyperclip.paste())
-            print(pyperclip.paste())
+    
 if __name__=='__main__':
     unittest.main()
