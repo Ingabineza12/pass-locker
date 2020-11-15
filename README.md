@@ -16,10 +16,10 @@ Python3.6
 
 
 ## Behavior Driven Development (BDD)
-Create method and function for delete,save, display, etc..
-Create 2 classes user and credential
-Create test file to test all your method
-Create the run file for used to run all your test
+Create method and function for delete,save, display, etc.. <br>
+Create 2 classes user and credential <br>
+Create test file to test all your method <br>
+Create the run file for used to run all your test <br>
 
 ## Licence
 
