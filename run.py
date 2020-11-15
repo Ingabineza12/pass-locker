@@ -3,9 +3,9 @@ from user import Credential
 
 def create_user(fname,name,pword,email):
     '''
-    function to create a new user account
+    Function to create a new user account
     '''
-    new_user=User(fname,name,pword,email)
+    new_user = User(fname,name,pword,email)
     return new_user
 
 def save_user(user):
@@ -13,6 +13,7 @@ def save_user(user):
     to save a new user account
     '''
     User.save_user(user)
+
 
 def delete_user(user):
     '''
@@ -81,11 +82,11 @@ def check_existing_user(first_name):
 
 def main():
     print(' ')
-    print('welcome to the password Locker application')
+    print('Welcome to the password Locker application')
     while True:
         print(' ')
-        print("*"*30)
-        print("use these codes to navigate: \n ca - Create account \n li - Login \n du - Delete User \n dd - Dispaly all users \n ex - Exit")
+        print("*"*50)
+        print("use these symbols to navigate: \n ca - Create account \n li - Login \n du - Delete User \n dd - Dispaly all users \n ex - Exit")
 
         short_code = input('Please Enter your choice:').lower().strip()
         if short_code == 'ex':
@@ -130,7 +131,7 @@ def main():
             save_user(create_user(first_name,username,password,email))
             print(" ")
             print(f'{first_name} {username} {email} {password} created successfully ')
-            
+
         elif short_code == 'li':
             print("*"*30)
             print(' ')

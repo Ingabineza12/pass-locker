@@ -29,8 +29,8 @@ class User:
         '''
         return cls.user_list
 
-     @classmethod
-     def user_exist(cls,first_name):
+    @classmethod
+    def user_exist(cls,first_name):
         '''
         method that find by username and return all information that matches
         Args:
@@ -57,7 +57,7 @@ class User:
                 return user
 
 
-    def __init__(self,first_name,username,password,emai):
+    def __init__(self,first_name,username,password,email):
 
         self.first_name=first_name
         self.username=username

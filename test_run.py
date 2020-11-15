@@ -179,8 +179,8 @@ class TestCredentials(unittest.TestCase):
             find_credential=Credential.find_site(credential.site_name)
             return pyperclip.copy(find_credential.password)
 
-        Credential.copy_credential(self.new_credential.site_name)
-        self.assertEqual('Debby07',pyperclip.paste())
-        print(pyperclip.paste())
+            Credential.copy_credential(self.new_credential.site_name)
+            self.assertEqual('Debby07',pyperclip.paste())
+            print(pyperclip.paste())
 if __name__=='__main__':
     unittest.main()
