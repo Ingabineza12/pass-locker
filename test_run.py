@@ -1,7 +1,6 @@
 import unittest
 from user import User
 from user import Credential
-import pyperclip
 
 class TestUser(unittest.TestCase):
     '''
@@ -157,6 +156,6 @@ class TestCredentials(unittest.TestCase):
         credential_exists=Credential.find_site('Twitter')
         self.assertEqual(credential_exists,twitter)
 
-    
+
 if __name__=='__main__':
     unittest.main()

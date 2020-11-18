@@ -1,4 +1,3 @@
-import pyperclip
 import string
 import random
 global user_list
@@ -129,4 +128,3 @@ class Credential:
         for credential in cls.credential_list:
             if credential.site_name==site_name:
                 return credential
-    
